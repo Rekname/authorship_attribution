@@ -13,7 +13,4 @@ scripts/
 data/english/*
 data/russian/*
 data/test_samples/*
-
-# Large model weights / artifacts (exceed GitHub 100MB limit)
-models/sentence_transformer/model.safetensors
-models/classifier.joblib
+models/*
