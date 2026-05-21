@@ -1,0 +1,23 @@
+{
+  "trained_at": "2026-05-19T19:14:18",
+  "training_duration_sec": 1529.62,
+  "n_authors": 39,
+  "n_samples": 3648,
+  "classifier_metrics": {
+    "svm": {
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.8315068493150685,
+      "display_name": "SVM"
+    },
+    "random_forest": {
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.7643835616438356,
+      "display_name": "Random Forest"
+    },
+    "logreg": {
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.8849315068493151,
+      "display_name": "Logistic Regression"
+    }
+  }
+}
