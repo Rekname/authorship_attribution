@@ -300,7 +300,6 @@ class FeatureExtractor:
         return X.astype(np.float32)
 
     def _scalar_matrix(self, texts: list[str]) -> np.ndarray:
-        """Все скалярные признаки на текст — одной матрицей (N, K)."""
         fns = [
             feature_hapax_ratio,
             feature_yules_k,
