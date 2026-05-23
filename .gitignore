@@ -10,7 +10,5 @@ wheels/
 .venv
 
 scripts/
-data/english/*
-data/russian/*
-data/test_samples/*
 models/*
+!models/.gitkeep
