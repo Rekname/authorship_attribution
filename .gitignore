@@ -15,7 +15,9 @@ wheels/
 
 # Secrets
 .env
+hf_token
 
 scripts/
+img/
 models/*
 !models/.gitkeep

@@ -36,6 +36,7 @@ cd authorship_attribution
 uv sync
 uv run python -m spacy download en_core_web_sm
 uv run python -m spacy download ru_core_news_sm
+uv run hf download Rekname/authorship-attribution --local-dir models/
 ```
 
 ### Вариант 2 — через pip
@@ -48,11 +49,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 python -m spacy download ru_core_news_sm
+hf download Rekname/authorship-attribution --local-dir models/
 ```
 
 ## Подготовка данных
 
-Корпус не входит в репозиторий. Структура каталога `data/`:
+Структура каталога `data/`:
 
 ```
 data/
@@ -98,8 +100,7 @@ python main.py
 
 1. Загрузите файл с анонимным текстом
 2. Выберите классификатор
-3. Приложение покажет наиболее вероятного автора и распределение
-   вероятностей по всем авторам в виде графика
+3. Приложение покажет наиболее вероятного автора и распределение вероятностей по всем авторам в виде графика
    
 ### Вкладка «Авторы»
 
