@@ -1,10 +1,15 @@
 # Установление авторства текста
 
 **Автор:** Малышко Александр Викторович
+
 **Логин:** malyshko_av_23
+
 **Курс/семестр:** 3/6
+
 **Специальность:** Кибербезопасность
+
 **Группа:** СДП-КБ-231
+
 **Вид проекта:** Курсовая работа
 
 Десктопное приложение для определения автора анонимного текста методами **стилометрии** и **машинного обучения**. Поддерживаются русский и английский языки. Графический интерфейс построен на PyQt6.
@@ -26,7 +31,7 @@
 ### Вариант 1 — через uv (рекомендуется)
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Rekname/authorship_attribution
 cd authorship_attribution
 uv sync
 uv run python -m spacy download en_core_web_sm
@@ -36,7 +41,7 @@ uv run python -m spacy download ru_core_news_sm
 ### Вариант 2 — через pip
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Rekname/authorship_attribution
 cd authorship_attribution
 python -m venv .venv
 source .venv/bin/activate
