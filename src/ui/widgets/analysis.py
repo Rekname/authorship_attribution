@@ -109,8 +109,6 @@ class AnalysisWidget(QWidget):
             QMessageBox.warning(self, "Нет текста", "Введите или загрузите текст.")
             return
         self._update_stats(text)
-        if len(text.split()) < 50:
-            QMessageBox.warning(self, "Мало слов", f"Текст содержит {len(text.split())} слов. Рекомендуется ≥ 200.")
 
         self._predict_btn.setEnabled(False)
         self._status.setText("Анализирую…")
