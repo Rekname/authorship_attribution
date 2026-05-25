@@ -41,11 +41,18 @@ uv run hf download Rekname/authorship-attribution --local-dir models/
 
 ### Вариант 2 — через pip
 
+**Linux / macOS:**
+
 ```bash
 git clone https://github.com/Rekname/authorship_attribution
 cd authorship_attribution
 python -m venv .venv
-source .venv/bin/activate
+
+# активация окружения — выберите вашу ОС:
+source .venv/bin/activate            # Linux / macOS
+.venv\Scripts\Activate.ps1           # Windows (PowerShell)
+.venv\Scripts\activate.bat           # Windows (cmd.exe)
+
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 python -m spacy download ru_core_news_sm
